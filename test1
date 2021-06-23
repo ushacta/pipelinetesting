@@ -5,7 +5,6 @@ pipeline {
       stage('install') {
          steps {
             echo 'Downloading the Code'
-            git url: 'https://github.com/andalike/personalWebSite.git'
             sh "whoami"
             sh "sudo apt-get install -y apache2"
             echo 'Installed the code and Starting the RUN'
